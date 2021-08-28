@@ -1,0 +1,137 @@
+.light-theme {
+   --primary: #fff;
+   --secondary: whitesmoke;
+   --accent: #66DE93;
+   --font-color: #000;
+   --pure: #fff;
+ }
+
+ .dark-theme {
+    --primary: #000000;
+    --secondary: #0b0b0b;
+    --accent: #0C7B93;
+    --font-color: #fff;
+    --pure: #fff;
+  }
+
+  .yellow-theme {
+     --primary: #FFF47D;
+     --secondary: #F5FDB0;
+     --accent: #4F0E0E;
+     --font-color: #8D2828;
+     --pure: #fff;
+   }
+
+  .strawberry-theme {
+     --primary: #FF6B6B;
+     --secondary: #FDD2BF;
+     --accent: #D54C4C;
+     --font-color: #fff;
+     --pure: #fff;
+   }
+
+ * {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   transition: background .4s ease-in-out;
+ }
+
+ body {
+   -webkit-font-smoothing: antialiased;
+   font-family: 'Nunito', sans-serif;
+   background-color: var(--primary);
+   color: var(--font-color);
+ }
+
+ .container {
+   width: 1192px;
+   max-width: 90%;
+   margin: 0 auto;
+ }
+
+ nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 1.6rem 0;
+ }
+
+ nav .branding {
+   font-weight: 700;
+   font-size: 1rem;
+   text-transform: uppercase;
+   color: var(--accent);
+ }
+
+ nav ul {
+   list-style-type: none;
+ }
+
+ nav ul li {
+   display: inline-block;
+   margin-left: 1rem;
+ }
+
+ nav ul li a {
+   font-weight: 700;
+   text-decoration: none;
+   color: var(--font-color);
+   text-transform: uppercase;
+ }
+
+ nav ul li select {
+   display: inline-block;
+   height: 30px;
+   width: 150px;
+   padding: 2px 10px;
+   outline: none;
+   color: var(--font-color);
+   border: none;
+   background: var(--secondary);
+   border-radius: 4px;
+ }
+
+ header {
+   display: grid;
+   grid-template-columns: 2fr 3fr;
+   align-items: center;
+ }
+
+ header .home-image img {
+   width: 65%;
+   position: relative;
+   top: 70px;
+   right: -250px;
+ }
+
+ header h1 {
+   font-size: 3rem;
+   line-height: 1;
+   font-weight: 700;
+ }
+
+ header p {
+   font-size: 1.3rem;
+   width: 70%;
+   margin-top: 1rem;
+ }
+
+ header button {
+   background: var(--accent);
+   color: var(--pure);
+   border: none;
+   padding: 0.6rem 1rem;
+   border-radius: 50px;
+   outline: none;
+   cursor: pointer;
+   margin-top: 1rem;
+   text-transform: uppercase;
+ }
+
+ section.bottom-part {
+   background: var(--secondary);
+   padding: 2rem;
+   height: 500px;
+   
+ }
